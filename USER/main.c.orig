@@ -1,0 +1,21 @@
+#include "sys.h"
+#include "delay.h"
+#include "usart.h"
+#include "timer.h"
+#include "led.h"
+
+extern u8 Rcv_Busy;//用来说明串口能不能继续接收下一帧数据
+int main(void)
+{
+
+    delay_init();	    	 //延时函数初始化
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
+    uart_init(4800);	 //串口初始化为480
+    TIM3_Int_Init(499, 7199); //定时器初始化为50ms中断一次
+	LED_Init();
+    while(1)
+    {
+        if(Rcv_Busy == 1) //串口忙
+            ModHandle();//处理接受到的数据
+    }
+}
