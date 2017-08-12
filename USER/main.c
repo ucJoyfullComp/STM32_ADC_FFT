@@ -83,6 +83,7 @@ int main(void)
 				Uart5_Send_String(tempstring);
 				delay_ms(500);
 			}
+			delay_ms(500);
 			dsp_g2_test();
 			Flag_Can_Do_FFT=0;
 			Current_Num=0;

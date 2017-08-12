@@ -103,45 +103,46 @@ void TIM4_IRQHandler(void)   //TIM4中断
 	if (TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET) //检查指定的TIM中断发生与否:TIM 中断源 
 		{
 		TIM_ClearITPendingBit(TIM4, TIM_IT_Update  );  //清除TIMx的中断待处理位:TIM 中断源 
-		if(FLag_LED==0)
-		{
-			GPIO_SetBits(GPIOC,GPIO_Pin_5);	 //IO口输出高电平
-			FLag_LED=1;
-		}
-		else
-		{
-			GPIO_ResetBits(GPIOC,GPIO_Pin_5);	 //IO口输出高电平
-			FLag_LED=0;
-		}
 			
-//			if(Current_Num<=64)
-//			{
-//				
-//				//读取一个数据
-//				cx=Get_Adc(ADC_Channel_1);
-//				temp=(float)cx*(3.3/4096);
-//				ADC_DATA[Current_Num] = temp*1.0f;
-//				
-//				Current_Num++;
-//			}
-//			else
-//			{
-//				//接收到了第64个数据
-//				
-//				
-//				Current_Num=0;
-//				TIM_Cmd(TIM4, DISABLE);  //失能TIMx外设	
-//				Flag_Can_Do_FFT=1;				
-//			}
-//				
-//			
-//			cx = Get_Adc(ADC_Channel_1);//从ADC里面取出一个数据
-//			temp=(float)cx*(3.3/4096);
-
-//			
+		//-------------------------------------------------
+//		if(FLag_LED==0)
+//		{
+//			GPIO_SetBits(GPIOC,GPIO_Pin_5);	 //IO口输出高电平
+//			FLag_LED=1;
 //		}
+//		else
+//		{
+//			GPIO_ResetBits(GPIOC,GPIO_Pin_5);	 //IO口输出高电平
+//			FLag_LED=0;
+//		}
+		//--------------------------------------------------
+			if(Current_Num<=64)
+			{
+				
+				//读取一个数据
+				cx=Get_Adc(ADC_Channel_1);
+				temp=(float)cx*(3.3/4096);
+				ADC_DATA[Current_Num] = temp*1.0f;
+				
+				Current_Num++;
+			}
+			else
+			{
+				//接收到了第64个数据
+				
+				
+				Current_Num=0;
+				TIM_Cmd(TIM4, DISABLE);  //失能TIMx外设	
+				Flag_Can_Do_FFT=1;				
+			}
+				
+			
+			cx = Get_Adc(ADC_Channel_1);//从ADC里面取出一个数据
+			temp=(float)cx*(3.3/4096);
+
+			
+		}
 		
 	}
 
 
-}

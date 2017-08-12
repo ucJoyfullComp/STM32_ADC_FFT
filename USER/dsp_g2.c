@@ -112,7 +112,7 @@ void dsp_g2_test()
 	float Mag = 0;
   u16 i=0;
   u32 Fs=3200;
-	Uart5_Send_String("----自主完成FFT----\r\n\0");
+	Uart5_Send_String("----Begin print FFT----\r\n\0");
   for(i=0;i<NPT;i++)//产生测试序列
   {
     s[i].real = ADC_DATA[i];
@@ -140,7 +140,7 @@ void dsp_g2_test()
 		}
 		
 		//delay_ms(100);
-		sprintf(temp,"%dTimess Mag:%.2f\r\n\0",i,OMAG[i]);
+		sprintf(temp,"%d Times Mag:%.2f\r\n\0",i,OMAG[i]);
 		Uart5_Send_String(temp);
 		delay_ms(100);
     //if(result[i] > 10)
