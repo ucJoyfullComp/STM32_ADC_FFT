@@ -1,17 +1,12 @@
-//¹ØÓÚFFT´úÂëÒÆÖ²µÄÒªµã£º
-//Ê×ÏÈ£¬ÎÒÃÇÐèÒªÒÆÖ²ÎÄ¼þ£º
+## å…³äºŽFFTä»£ç ç§»æ¤çš„è¦ç‚¹ï¼š
+#### é¦–å…ˆï¼Œæˆ‘ä»¬éœ€è¦ç§»æ¤æ–‡ä»¶ï¼š
 
-//1.table_fft.h (FFT±íÎÄ¼þ)
-
-//2.stm32_dsp.h (µ÷ÓÃDSP¿âº¯ÊýµÄÍ·ÎÄ¼þ£¬Èç¹ûÊÇ×Ô¼º±àÐ´µÄfft£¬Ôò²»ÐèÒª´ËÎÄ¼þ)
-
-//3.cr4_fft_64_stm32.s ºÍ cr4_fft_256_stm32.s ºÍ cr4_fft_1024_stm32.s £¨DSP¸µÀïÒ¶±ä»»µÄ¿ÉÖ´ÐÐº¯Êý£¬Èç¹ûÊÇ×Ô¼ºÍê³ÉµÄfftÔò²»ÐèÒª´ËÎÄ¼þ£©
-
-//4.FFT2.c£¨ºÍÍ¬Ò»Ä¿Â¼ÏÂFFT2)  Õâ¸öÊÇ×Ô¼ºÊµÏÖFFTµÄº¯ÊýËùÔÚÎÄ¼þ£¬ÆäÖÐ°üº¬¼òµ¥µÄÊý¾Ý´¦Àí£¬ÂË²¨£¨Èç¹ûÊÇµ÷ÓÃdpsº¯ÊýÍê³É£¬Ôò²»ÐèÒª´ËÎÄ¼þ£©
-
-//5.dsp_g2.c (²âÊÔÐòÁÐ·¢Éúº¯Êý£¬fftµ÷ÓÃº¯Êý£¬´®¿ÚÍ¨ÐÅº¯Êý£¬È«²¿·â×°ÔÚÒ»¸öº¯ÊýÄÚ£¬ÔÚmainº¯ÊýÀïÃæµ÷ÓÃ¼´¿É£¬Õâ¸öÊÇ×Ô¼ºÊµÏÖµÄFFT)
-
-//6.dsp_asm.c £¨Í¬ÉÏ£¬²»¹ýÕâ¸öÊÇÖ±½Óµ÷ÓÃ¿âº¯ÊýµÄFFT£¬²»ÍÆ¼öÊ¹ÓÃ£©
+> 1.table_fft.h (FFTè¡¨æ–‡ä»¶)
+- stm32_dsp.h (è°ƒç”¨DSPåº“å‡½æ•°çš„å¤´æ–‡ä»¶ï¼Œå¦‚æžœæ˜¯è‡ªå·±ç¼–å†™çš„fftï¼Œåˆ™ä¸éœ€è¦æ­¤æ–‡ä»¶)
+- cr4_fft_64_stm32.s å’Œ cr4_fft_256_stm32.s å’Œ cr4_fft_1024_stm32.s ï¼ˆDSPå‚…é‡Œå¶å˜æ¢çš„å¯æ‰§è¡Œå‡½æ•°ï¼Œå¦‚æžœæ˜¯è‡ªå·±å®Œæˆçš„fftåˆ™ä¸éœ€è¦æ­¤æ–‡ä»¶ï¼‰
+- FFT2.cï¼ˆå’ŒåŒä¸€ç›®å½•ä¸‹FFT2)  è¿™ä¸ªæ˜¯è‡ªå·±å®žçŽ°FFTçš„å‡½æ•°æ‰€åœ¨æ–‡ä»¶ï¼Œå…¶ä¸­åŒ…å«ç®€å•çš„æ•°æ®å¤„ç†ï¼Œæ»¤æ³¢ï¼ˆå¦‚æžœæ˜¯è°ƒç”¨dpså‡½æ•°å®Œæˆï¼Œåˆ™ä¸éœ€è¦æ­¤æ–‡ä»¶ï¼‰
+- dsp_g2.c (æµ‹è¯•åºåˆ—å‘ç”Ÿå‡½æ•°ï¼Œfftè°ƒç”¨å‡½æ•°ï¼Œä¸²å£é€šä¿¡å‡½æ•°ï¼Œå…¨éƒ¨å°è£…åœ¨ä¸€ä¸ªå‡½æ•°å†…ï¼Œåœ¨mainå‡½æ•°é‡Œé¢è°ƒç”¨å³å¯ï¼Œè¿™ä¸ªæ˜¯è‡ªå·±å®žçŽ°çš„FFT)
+- dsp_asm.c ï¼ˆåŒä¸Šï¼Œä¸è¿‡è¿™ä¸ªæ˜¯ç›´æŽ¥è°ƒç”¨åº“å‡½æ•°çš„FFTï¼Œä¸æŽ¨èä½¿ç”¨ï¼‰
 
 
 
