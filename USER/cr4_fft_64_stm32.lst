@@ -723,17 +723,13 @@ Symbol: NPT
    Definitions
       At line 46 in file ..\STM32F10x_FWLib\cr4_fft_64_stm32.s
    Uses
-      At line 135 in macro ^D
- FOPT
+      At line 135 in macro €เหจ5สOPT
       at line 223 in file ..\STM32F10x_FWLib\cr4_fft_64_stm32.s
-      At line 137 in macro ^D
- FOPT
+      At line 137 in macro €เหจ5สOPT
       at line 223 in file ..\STM32F10x_FWLib\cr4_fft_64_stm32.s
-      At line 139 in macro ^D
- FOPT
+      At line 139 in macro €เหจ5สOPT
       at line 223 in file ..\STM32F10x_FWLib\cr4_fft_64_stm32.s
-      At line 141 in macro ^D
- FOPT
+      At line 141 in macro €เหจ5สOPT
       at line 223 in file ..\STM32F10x_FWLib\cr4_fft_64_stm32.s
 
 1 symbol

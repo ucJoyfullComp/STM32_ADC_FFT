@@ -130,7 +130,6 @@ void TIM4_IRQHandler(void)   //TIM4中断
 			{
 				//接收到了第64个数据
 				
-				
 				Current_Num=0;
 				TIM_Cmd(TIM4, DISABLE);  //失能TIMx外设	
 				Flag_Can_Do_FFT=1;				

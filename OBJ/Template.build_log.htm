@@ -27,24 +27,26 @@ Project File Date:  08/11/2017
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
-compiling dsp_g2.c...
-dsp_g2.c(115): warning:  #223-D: function "Uart5_Send_String" declared implicitly
-  	Uart5_Send_String("----Begin print FFT----\r\n\0");
-dsp_g2.c(143): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
-  		sprintf(temp,"%d Times Mag:%.2f\r\n\0",i,OMAG[i]);
-dsp_g2.c(145): warning:  #223-D: function "delay_ms" declared implicitly
-  		delay_ms(100);
-dsp_g2.c(110): warning:  #550-D: variable "X"  was set but never used
-  	u32 X=0;
-dsp_g2.c(111): warning:  #550-D: variable "Y"  was set but never used
-  	u32 Y=0;
-dsp_g2.c(114): warning:  #177-D: variable "Fs"  was declared but never referenced
-    u32 Fs=3200;
-dsp_g2.c: 6 warnings, 0 errors
+compiling main.c...
+main.c(45): warning:  #223-D: function "InitBufInArray" declared implicitly
+  		InitBufInArray();
+main.c(53): warning:  #223-D: function "TIM4_Int_Init" declared implicitly
+  		TIM4_Int_Init(499,44);//定时器4设置50hz的计数频率20/64ms中断一次
+main.c(84): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				sprintf(tempstring,"%.2f\r\n\0",ADC_DATA[i]);
+main.c(100): warning:  #128-D: loop is not reachable
+      while(1)
+main.c(41): warning:  #177-D: variable "adcx"  was declared but never referenced
+  		u16 adcx;			
+main.c(42): warning:  #177-D: variable "cx"  was declared but never referenced
+  		u16 cx;		
+main.c(43): warning:  #177-D: variable "temp"  was declared but never referenced
+  		float temp = 0.0;
+main.c: 7 warnings, 0 errors
 linking...
-Program Size: Code=27720 RO-data=944 RW-data=84 ZI-data=6956  
+Program Size: Code=27032 RO-data=944 RW-data=84 ZI-data=4652  
 FromELF: creating hex file...
-"..\OBJ\Template.axf" - 0 Error(s), 6 Warning(s).
+"..\OBJ\Template.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
