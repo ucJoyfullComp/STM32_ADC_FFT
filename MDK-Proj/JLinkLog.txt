@@ -1,0 +1,26 @@
+
+T0358 000:510 SEGGER J-Link ARM V4.11i (beta) Log File (0004ms, 0507ms total)
+T0358 000:510 DLL Compiled: Jan 28 2010 19:55:25 (0004ms, 0507ms total)
+T0358 000:510 Logging started @ 2010-08-11 12:35 (0004ms, 0507ms total)
+T0358 000:514 JLINKARM_SetWarnOutHandler(...) (0000ms, 0511ms total)
+T0358 000:515 JLINKARM_OpenEx(...)
+Firmware: J-Link ARM V6 compiled Jun 30 2009 11:05:04
+Hardware: V6.00
+S/N: 40004944
+Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull  returns O.K. (0099ms, 0512ms total)
+T0358 000:614 JLINKARM_SetErrorOutHandler(...) (0000ms, 0611ms total)
+T0358 000:615 JLINKARM_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0004ms, 0611ms total)
+T0358 000:621 JLINKARM_SetSpeed(10000) (0003ms, 0615ms total)
+T0358 000:626 JLINKARM_GetHardwareVersion()  returns 0xEA60 (0000ms, 0618ms total)
+T0358 000:626 JLINKARM_GetDLLVersion()  returns 41109 (0001ms, 0618ms total)
+T0358 000:627 JLINKARM_GetFirmwareString(...) (0000ms, 0619ms total)
+T0358 000:627 JLINKARM_GetDLLVersion()  returns 41109 (0000ms, 0619ms total)
+T0358 000:627 JLINKARM_GetCompileDateTime() (0000ms, 0619ms total)
+T0358 000:627 JLINKARM_GetFirmwareString(...) (0000ms, 0619ms total)
+T0358 000:627 JLINKARM_GetHardwareVersion()  returns 0xEA60 (0000ms, 0619ms total)
+T0358 000:628 JLINKARM_SetResetType(JLINKARM_RESET_TYPE_NORMAL)  returns JLINKARM_RESET_TYPE_NORMAL (0000ms, 0619ms total)
+T0358 000:628 JLINKARM_Reset() >0x108 TIF>Found SWD-DP with ID 0x1BA01477 >0x33 TIF> >0x33 TIF> >0x35 TIF> >0x33 TIF> >0x35 TIF> >0x33 TIF> >0x33 TIF> >0x35 TIF> >0x66 TIF> >0x66 TIF> >0x35 TIF> >0x16D TIF> >0xD0 TIF> >0xD0 TIF>TPIU fitted. >0xD0 TIF>ETM fitted. >0xD0 TIF>  FPUnit: 6 code (BP) slots and 2 literal slots >0xD0 TIF> (0052ms, 0619ms total)
+T0358 000:680 JLINKARM_JTAG_StoreRaw(..., 0x108 Bits)  returns 0x00 (0000ms, 0671ms total)
+T0358 000:680 JLINKARM_JTAG_GetU32(BitPos = 227) >0x108 TIF>  returns 0x1BA01477 (0002ms, 0671ms total)
+T0358 000:683 JLINKARM_GetCompileDateTime() (0000ms, 0673ms total)
+T0358 002:363 JLINKARM_Close() (0108ms, 0673ms total)

@@ -1,0 +1,260 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\MDKProj\FFT2\MDK-Proj\FFT2.uvproj
+Project File Date:  08/03/2010
+
+<h2>Output:</h2>
+Build target 'STM32_FFT2'
+compiling main.c...
+..\main.c(39): error:  #20: identifier "ADC_InitTypeDef" is undefined
+..\main.c(40): error:  #20: identifier "DMA_InitTypeDef" is undefined
+..\main.c(74): warning:  #223-D: function "DMA_DeInit" declared implicitly
+..\main.c(77): error:  #20: identifier "DMA_DIR_PeripheralSRC" is undefined
+..\main.c(79): error:  #20: identifier "DMA_PeripheralInc_Disable" is undefined
+..\main.c(80): error:  #20: identifier "DMA_MemoryInc_Disable" is undefined
+..\main.c(81): error:  #20: identifier "DMA_PeripheralDataSize_HalfWord" is undefined
+..\main.c(82): error:  #20: identifier "DMA_MemoryDataSize_HalfWord" is undefined
+..\main.c(83): error:  #20: identifier "DMA_Mode_Circular" is undefined
+..\main.c(84): error:  #20: identifier "DMA_Priority_High" is undefined
+..\main.c(85): error:  #20: identifier "DMA_M2M_Disable" is undefined
+..\main.c(86): warning:  #223-D: function "DMA_Init" declared implicitly
+..\main.c(88): warning:  #223-D: function "DMA_Cmd" declared implicitly
+..\main.c(108): error:  #20: identifier "ADC_Mode_Independent" is undefined
+..\main.c(111): error:  #20: identifier "ADC_ExternalTrigConv_None" is undefined
+..\main.c(112): error:  #20: identifier "ADC_DataAlign_Right" is undefined
+..\main.c(114): warning:  #223-D: function "ADC_Init" declared implicitly
+..\main.c(116): warning:  #223-D: function "ADC_RegularChannelConfig" declared implicitly
+..\main.c(116): error:  #20: identifier "ADC_Channel_14" is undefined
+..\main.c(116): error:  #20: identifier "ADC_SampleTime_28Cycles5" is undefined
+..\main.c(118): warning:  #223-D: function "ADC_DMACmd" declared implicitly
+..\main.c(129): error:  #20: identifier "ADC_Channel_13" is undefined
+..\main.c(131): warning:  #223-D: function "ADC_ITConfig" declared implicitly
+..\main.c(131): error:  #20: identifier "ADC_IT_EOC" is undefined
+..\main.c(142): error:  #20: identifier "ADC_Channel_12" is undefined
+..\main.c(147): warning:  #223-D: function "ADC_Cmd" declared implicitly
+..\main.c(150): warning:  #223-D: function "ADC_ResetCalibration" declared implicitly
+..\main.c(152): warning:  #223-D: function "ADC_GetResetCalibrationStatus" declared implicitly
+..\main.c(155): warning:  #223-D: function "ADC_StartCalibration" declared implicitly
+..\main.c(157): warning:  #223-D: function "ADC_GetCalibrationStatus" declared implicitly
+..\main.c(186): warning:  #223-D: function "ADC_SoftwareStartConvCmd" declared implicitly
+..\main.c(205): warning:  #223-D: function "RCC_ADCCLKConfig" declared implicitly
+..\main.c(205): error:  #20: identifier "RCC_PCLK2_Div4" is undefined
+..\main.c(209): warning:  #223-D: function "RCC_AHBPeriphClockCmd" declared implicitly
+..\main.c(209): error:  #20: identifier "RCC_AHBPeriph_DMA1" is undefined
+..\main.c(209): error:  #20: identifier "RCC_AHBPeriph_DMA2" is undefined
+..\main.c(212): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+..\main.c(212): error:  #20: identifier "RCC_APB2Periph_ADC1" is undefined
+..\main.c(212): error:  #20: identifier "RCC_APB2Periph_ADC2" is undefined
+..\main.c(213): error:  #20: identifier "RCC_APB2Periph_ADC3" is undefined
+..\main.c(213): error:  #20: identifier "RCC_APB2Periph_GPIOC" is undefined
+..\main.c(223): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+..\main.c(227): error:  #20: identifier "GPIO_Pin_2" is undefined
+..\main.c(227): error:  #20: identifier "GPIO_Pin_3" is undefined
+..\main.c(227): error:  #20: identifier "GPIO_Pin_4" is undefined
+..\main.c(228): error:  #20: identifier "GPIO_Mode_AIN" is undefined
+compiling stm32f10x_it.c...
+..\stm32f10x_it.c(156): warning:  #223-D: function "ADC_GetConversionValue" declared implicitly
+compiling stm32f10x_tim.c...
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(124): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(229): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(282): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(365): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(447): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(526): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(588): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(649): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(705): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(799): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(824): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(865): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(902): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(930): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(957): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(982): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1001): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1029): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1070): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1111): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1143): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1169): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1193): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1223): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1262): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1309): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1333): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1357): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1381): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1402): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1426): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1451): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1476): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1503): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1528): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1552): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1576): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1600): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1626): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1651): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1676): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1701): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1727): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1751): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1775): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1799): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1822): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1846): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1869): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1893): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1917): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1941): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1969): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(1999): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2041): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2085): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2113): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2137): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2163): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2195): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2218): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2239): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2257): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2271): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2285): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2299): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2313): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2327): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2346): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2368): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2390): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2412): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2434): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2450): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2463): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2476): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2489): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2502): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2515): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2550): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2593): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2627): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(2669): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_usart.c...
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(131): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(181): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(303): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(351): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(390): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(447): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(475): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(498): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(517): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(546): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(565): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(591): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(608): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(624): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(640): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(660): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(679): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(704): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(730): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(761): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(788): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(817): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(836): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(874): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(922): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(957): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(1030): warning:  #223-D: function "assert_param" declared implicitly
+compiling misc.c...
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\misc.c(98): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\misc.c(116): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\misc.c(157): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\misc.c(176): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\misc.c(200): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_gpio.c...
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(110): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(177): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(285): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(307): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(323): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(345): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(360): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(376): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(396): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(419): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(436): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(465): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(485): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(546): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(605): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(624): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_rcc.c...
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(282): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(347): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(366): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(392): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(413): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(577): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(621): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(647): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(673): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(712): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(740): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(779): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(841): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(874): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(891): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(905): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1074): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1105): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1136): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1195): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1226): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1247): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1260): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1292): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1339): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1413): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1458): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_rtc.c...
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c(95): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c(165): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c(251): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c(278): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c(297): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c(323): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_sdio.c...
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(185): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(237): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(253): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(309): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(333): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(350): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(416): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(435): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(531): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(545): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(561): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(575): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(589): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(603): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(616): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(629): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(670): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(706): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(747): warning:  #223-D: function "assert_param" declared implicitly
+D:\Keil\ARM\RV31\LIB\ST\STM32F10x_StdPeriph_Driver\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c(781): warning:  #223-D: function "assert_param" declared implicitly
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_cl.s...
+assembling startup_stm32f10x_hd.s...
+assembling startup_stm32f10x_ld.s...
+assembling startup_stm32f10x_ld_vl.s...
+assembling startup_stm32f10x_md.s...
+assembling startup_stm32f10x_md_vl.s...
+assembling startup_stm32f10x_xl.s...
+Target not created
