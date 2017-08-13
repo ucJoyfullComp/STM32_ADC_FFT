@@ -28,19 +28,23 @@ Project File Date:  08/13/2017
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
 compiling handlefft.c...
-handlefft.c(15): warning:  #177-D: variable "temp"  was declared but never referenced
+handlefft.c(16): warning:  #177-D: variable "temp"  was declared but never referenced
   	u8 temp[50]={0};
-handlefft.c(47): warning:  #177-D: variable "temp"  was declared but never referenced
-  	u8 temp[50]={0};	
-handlefft.c(48): warning:  #177-D: variable "i"  was declared but never referenced
+handlefft.c(53): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	sprintf(temp,"harmonic_ratio:%.2f\r\n\0",harmonic_ratio);
+handlefft.c(54): warning:  #223-D: function "Uart5_Send_String" declared implicitly
+  	Uart5_Send_String(temp);
+handlefft.c(55): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	sprintf(temp,"%.2f - %.2f = %.2f",result[0],result[1],harmonic_difference);
+handlefft.c(49): warning:  #177-D: variable "i"  was declared but never referenced
   	int i;
-handlefft.c(65): warning:  #1-D: last line of file ends without a newline
+handlefft.c(67): warning:  #1-D: last line of file ends without a newline
   }
-handlefft.c: 4 warnings, 0 errors
+handlefft.c: 6 warnings, 0 errors
 linking...
-Program Size: Code=21408 RO-data=768 RW-data=96 ZI-data=3624  
+Program Size: Code=25656 RO-data=944 RW-data=116 ZI-data=3628  
 FromELF: creating hex file...
-"..\OBJ\Template.axf" - 0 Error(s), 4 Warning(s).
+"..\OBJ\Template.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,7 +58,7 @@ Package Vendor: Keil
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

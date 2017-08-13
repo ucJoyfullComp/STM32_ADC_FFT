@@ -9,6 +9,7 @@ extern float result[NPT];
 float harmonic_difference;
 float harmonic_regression = 0;
 float harmonic_intercept = 0;
+float harmonic_ratio = 0;
 
 //线性回归求斜率
 void linear_regression(){
@@ -21,7 +22,6 @@ void linear_regression(){
 	for (i = 0;i!=31;i++){
 		sum_x += i;
 		sum_y += result[i];
-
 	}
 
 	X = sum_x/32;
@@ -37,9 +37,10 @@ void linear_regression(){
 	harmonic_regression = b;
 	harmonic_intercept = a;
 	
-//	sprintf(temp,"linear regression equation: Y = %.2fX + %.2f\r\n\0",b,a);
-//	Uart5_Send_String(temp);
+	//	sprintf(temp,"linear regression equation: Y = %.2fX + %.2f\r\n\0",b,a);
+	//	Uart5_Send_String(temp);
 }
+
 
 
 //处理FFT结果函数，主要运行线性拟合
@@ -48,11 +49,12 @@ void handle_fft_result(){
 	int i;
 	//计算基波与一次谐波差值
 	harmonic_difference = result[0] - result[1];
-	//	sprintf(temp,"harmonic_difference:%.2f\r\n\0",harmonic_difference);
-	//	Uart5_Send_String(temp);
+	harmonic_ratio = harmonic_difference/result[0];
+	sprintf(temp,"harmonic_ratio:%.2f\r\n\0",harmonic_ratio);
+	Uart5_Send_String(temp);
+	sprintf(temp,"%.2f - %.2f = %.2f",result[0],result[1],harmonic_difference);
+	Uart5_Send_String(temp);
 	delay_ms(500);
-//	sprintf(temp,"%.2f-%.2f=%.2f",result[0],result[1],harmonic_difference);
-//	Uart5_Send_String(temp);
 	//计算31个离散数据拟合线度
 	linear_regression();
 }

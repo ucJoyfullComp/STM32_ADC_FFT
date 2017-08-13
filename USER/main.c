@@ -13,6 +13,10 @@ u8 CMD_GET_DATAS[8]={0x01,0x03,0x00,0x48,0x00,0x0a,0x45,0xdb};
 extern float ADC_DATA[64];
 extern int Current_Num;
 extern int Flag_Can_Do_FFT;
+extern float harmonic_regression;
+extern float harmonic_intercept;
+float last_harmonic_regression = 0;
+float last_harmonic_intercept = 0;
 
 int main(void)
 {
@@ -34,7 +38,7 @@ int main(void)
    
 	//------------------------- 初始化完成 ---------------
 
-		Uart5_Send_String("Initial OK\r\n\0");
+//		Uart5_Send_String("Initial OK\r\n\0");
 	while(1)
 	{																											//调用快速傅里叶变换
 		delay_ms(1000);
@@ -50,13 +54,16 @@ int main(void)
 //==========================================================================		
 //			delay_ms(500);
 			dsp_g2_test();
+																//暂存上一次FFT 处理过的数据
+			last_harmonic_regression = harmonic_regression;
+			last_harmonic_intercept = harmonic_intercept;
 			handle_fft_result();
 			Flag_Can_Do_FFT=0;
 			Current_Num=0;
 			TIM_Cmd(TIM4, ENABLE); 
 		}
 		 
-		while(USART_GetFlagStatus(UART5, USART_FLAG_TC) == RESET);//等待上一个字节发送完毕
+		while(USART_GetFlagStatus(UART5, USART_FLAG_TC)  == RESET);//等待上一个字节发送完毕
 		//delay_ms(300);
 	}
 	
