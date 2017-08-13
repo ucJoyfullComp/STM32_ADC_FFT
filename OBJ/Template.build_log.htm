@@ -22,31 +22,25 @@ Dialog DLL:      TARMSTM.DLL V1.66.0.0
  
 <h2>Project:</h2>
 C:\Users\ABC\Downloads\modbus实验\USER\Template.uvprojx
-Project File Date:  08/11/2017
+Project File Date:  08/13/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
-compiling main.c...
-main.c(45): warning:  #223-D: function "InitBufInArray" declared implicitly
-  		InitBufInArray();
-main.c(53): warning:  #223-D: function "TIM4_Int_Init" declared implicitly
-  		TIM4_Int_Init(499,44);//定时器4设置50hz的计数频率20/64ms中断一次
-main.c(84): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
-  				sprintf(tempstring,"%.2f\r\n\0",ADC_DATA[i]);
-main.c(100): warning:  #128-D: loop is not reachable
-      while(1)
-main.c(41): warning:  #177-D: variable "adcx"  was declared but never referenced
-  		u16 adcx;			
-main.c(42): warning:  #177-D: variable "cx"  was declared but never referenced
-  		u16 cx;		
-main.c(43): warning:  #177-D: variable "temp"  was declared but never referenced
-  		float temp = 0.0;
-main.c: 7 warnings, 0 errors
+compiling handlefft.c...
+handlefft.c(15): warning:  #177-D: variable "temp"  was declared but never referenced
+  	u8 temp[50]={0};
+handlefft.c(47): warning:  #177-D: variable "temp"  was declared but never referenced
+  	u8 temp[50]={0};	
+handlefft.c(48): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i;
+handlefft.c(65): warning:  #1-D: last line of file ends without a newline
+  }
+handlefft.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=27032 RO-data=944 RW-data=84 ZI-data=4652  
+Program Size: Code=21408 RO-data=768 RW-data=96 ZI-data=3624  
 FromELF: creating hex file...
-"..\OBJ\Template.axf" - 0 Error(s), 7 Warning(s).
+"..\OBJ\Template.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -60,7 +54,7 @@ Package Vendor: Keil
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

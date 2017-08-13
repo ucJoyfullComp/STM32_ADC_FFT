@@ -625,6 +625,11 @@
               <FileType>1</FileType>
               <FilePath>.\dsp_asm.c</FilePath>
             </File>
+            <File>
+              <FileName>handlefft.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\handlefft.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

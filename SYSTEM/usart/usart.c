@@ -399,3 +399,29 @@ void UART5_IRQHandler(void)
 
 }
 
+/****************************************************************
+	名称：Uart5_Send_String()
+	参数：字符串指针
+	功能：串口5发送一个数组，字符串以\0结尾
+	返回：无
+****************************************************************/
+void Uart5_Send_String(u8 *p)
+{
+	u8 CMD_TFT_END[3]={0xff,0xff,0xff};
+	int i=0;
+	while(*p!='\0')
+	{
+		USART_SendData(UART5,*p);
+		while(USART_GetFlagStatus(UART5,USART_FLAG_TC)==RESET);
+		p++;
+	}
+	for(i=0;i<3;i++)
+	{
+		USART_SendData(UART5,CMD_TFT_END[i]);
+		while(USART_GetFlagStatus(UART5,USART_FLAG_TC)==RESET);
+	}
+	
+}
+
+
+

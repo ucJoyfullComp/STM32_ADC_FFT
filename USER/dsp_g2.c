@@ -67,7 +67,7 @@
 *                                       LOCAL GLOBAL VARIABLES
 *********************************************************************************************************
 */
-double result[NPT];
+float result[NPT];
 struct compx s[NPT];
 float OMAG[NPT];
 extern float ADC_DATA[64];
@@ -109,10 +109,9 @@ void dsp_g2_test()
 	u8 temp[50]={0};																//临时字符串存储
 	u32 X=0;
 	u32 Y=0;
-	float Mag = 0;
   u16 i=0;
   u32 Fs=3200;
-	Uart5_Send_String("----Begin print FFT----\r\n\0");
+	//Uart5_Send_String("----Begin print FFT----\r\n\0");
   for(i=0;i<NPT;i++)															//产生测试序列
   {
     s[i].real = ADC_DATA[i];
@@ -122,9 +121,10 @@ void dsp_g2_test()
   for(i=0;i<NPT/2;i++)
   {																								// X 的值为s[i].real 表示FFT 计算结果实部，Y同理
     result[i] = sqrt(s[i].real * s[i].real + s[i].imag * s[i].imag)*2/NPT;
-		sprintf(temp,"%d Times Result:%.2f\r\n\0",i,result[i]);
-		Uart5_Send_String(temp);
-		delay_ms(100);
+//打印调试输出结果
+//		sprintf(temp,"%d Times Result:%.2f\r\n\0",i,result[i]);
+//		Uart5_Send_String(temp);
+//		delay_ms(100);
   }
   
 }

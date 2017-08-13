@@ -36,3 +36,4 @@
 ..\obj\main.o: led.h
 ..\obj\main.o: ..\FUNCTION\adc.h
 ..\obj\main.o: dsp_g2.h
+..\obj\main.o: handlefft.h
