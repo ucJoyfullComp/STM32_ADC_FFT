@@ -1,5 +1,5 @@
 ## 这是一个使用STM32单片机实现的电压电流采集，AD转换并且将采集的数据进行快速傅里叶变换生成频谱图的示例代码
-This is a demo using STM32F103z to achieve voltages' A/D converting and transform basic data into spectrum using FFT algorithm
+This is a demo using STM32F103z to convert voltages' A/D and transform basic data into spectrum using FFT algorithm
 
 
 ### 需要移植的移植库文件：
